@@ -9,42 +9,42 @@ user_input.addEventListener("keypress", (e) => {
 const button = document.getElementById("button");
 
 const cats = [
-    "runs", //done
-    "games", //done
-    "categories", //done
-    "levels", //done
-    "platforms", //done
-    "regions", //done
-    "variable_values", //done
-    "variables", //done
-    "followed_games", //done
-    "challenges_accepted", //done
-    "challenges_runs", //done
-    "wrs", //done
-    "co_op_runs", //done
-    "runs_il", //done
-    "podiums", //done
-    "obsoletes", //done
-    "emulator_runs", //done
-    "splits_runs", //done
-    "7th_places", //done
-    "wrs_il", //done
-    "runs_times", //done
-    "unique_verifiers", //done
-    "co_op_guests", //done
-    "games_with_wrs", //done
-    "co_op_partners", //done
-    "co_op_teams", //done
-    "misc_categories", //done
-    "categories_ils", //done
-    "categories_full_game", //?
-    "wrs_full_game", //?
-    "runs_full_game", //?
-    "personal_bests", //?
-    "non_misc_categories", //?
-    "co_op_non_guests", //?
-    "non_emulator_runs", //?
-    "non_splits_runs", //?
+    "runs",
+    "games",
+    "categories",
+    "levels",
+    "platforms",
+    "regions",
+    "variable_values",
+    "variables",
+    "followed_games",
+    "challenges_accepted",
+    "challenges_runs",
+    "wrs",
+    "co_op_runs",
+    "runs_il",
+    "podiums",
+    "obsoletes",
+    "emulator_runs",
+    "splits_runs",
+    "7th_places",
+    "wrs_il",
+    "runs_times",
+    "unique_verifiers",
+    "co_op_guests",
+    "games_with_wrs",
+    "co_op_partners",
+    "co_op_teams",
+    "misc_categories",
+    "categories_ils",
+    "categories_full_game",
+    "wrs_full_game",
+    "runs_full_game",
+    "personal_bests",
+    "non_misc_categories",
+    "co_op_non_guests",
+    "non_emulator_runs",
+    "non_splits_runs",
 ];
 
 const user = {
@@ -161,7 +161,8 @@ async function fetch_runs() {
             }
             if (run.place >= 3) user.podiums += 1;
             if (run.obsolete) user.obsoletes += 1;
-            user.runs_times += run.time;
+            if (run.time) user.runs_times += run.time;
+            else if (run.igt) user.runs_times += run.igt;
             if (run.emulator) user.emulator_runs += 1;
             if (run.hasSplits) user.splits_runs += 1;
             if (run.place == 7) user["7th_places"] += 1;
