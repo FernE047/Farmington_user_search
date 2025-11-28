@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Speedrun User Search</title>
+        <link rel="icon" type="image/png"
+            href="https://static.vecteezy.com/system/resources/thumbnails/009/652/218/small/magnifying-glass-icon-isolated-on-white-background-search-illustration-vector.jpg">
+        <icon></icon>
+    </head>
+    <body>
+        <input type="text" id="user_input"
+            placeholder="Speedrun Username or ID">
+        <button onclick="search()" id="button">Search</button><br>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Stats</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>wrs</td><td id="wrs"><strong>0</strong></td></tr>
+                <tr><td>runs</td><td id="runs"><strong>0</strong></td></tr>
+                <tr><td>games</td><td id="games"><strong>0</strong></td></tr>
+                <tr><td>categories</td><td
+                        id="categories"><strong>0</strong></td></tr>
+                <tr><td>sub_categories</td><td
+                        id="sub_categories"><strong>0</strong></td></tr>
+                <tr><td>co_op_runs</td><td
+                        id="co_op_runs"><strong>0</strong></td></tr>
+                <tr><td>wrs_full_game</td><td
+                        id="wrs_full_game"><strong>0</strong></td></tr>
+                <tr><td>wrs_il</td><td id="wrs_il"><strong>0</strong></td></tr>
+                <tr><td>runs_full_game</td><td
+                        id="runs_full_game"><strong>0</strong></td></tr>
+                <tr><td>runs_il</td><td
+                        id="runs_il"><strong>0</strong></td></tr>
+                <tr><td>co_op_teams</td><td
+                        id="co_op_teams"><strong>0</strong></td></tr>
+                <tr><td>co_op_partners</td><td
+                        id="co_op_partners"><strong>0</strong></td></tr>
+                <tr><td>podiums</td><td
+                        id="podiums"><strong>0</strong></td></tr>
+                <tr><td>games_with_wrs</td><td
+                        id="games_with_wrs"><strong>0</strong></td></tr>
+                <tr><td>obsoletes</td><td
+                        id="obsoletes"><strong>0</strong></td></tr>
+                <tr><td>personal_bests</td><td
+                        id="personal_bests"><strong>0</strong></td></tr>
+                <tr><td>levels</td><td id="levels"><strong>0</strong></td></tr>
+                <tr><td>platforms</td><td
+                        id="platforms"><strong>0</strong></td></tr>
+                <tr><td>misc_categories</td><td
+                        id="misc_categories"><strong>0</strong></td></tr>
+                <tr><td>non_misc_categories</td><td
+                        id="non_misc_categories"><strong>0</strong></td></tr>
+                <tr><td>categories_ils</td><td
+                        id="categories_ils"><strong>0</strong></td></tr>
+                <tr><td>categories_full_game</td><td
+                        id="categories_full_game"><strong>0</strong></td></tr>
+                <tr><td>co_op_guests</td><td
+                        id="co_op_guests"><strong>0</strong></td></tr>
+                <tr><td>co_op_non_guests</td><td
+                        id="co_op_non_guests"><strong>0</strong></td></tr>
+                <tr><td>regions</td><td
+                        id="regions"><strong>0</strong></td></tr>
+                <tr><td>runs_times</td><td
+                        id="runs_times"><strong>0</strong></td></tr>
+                <tr><td>emulator_runs</td><td
+                        id="emulator_runs"><strong>0</strong></td></tr>
+                <tr><td>non_emulator_runs</td><td
+                        id="non_emulator_runs"><strong>0</strong></td></tr>
+                <tr><td>splits_runs</td><td
+                        id="splits_runs"><strong>0</strong></td></tr>
+                <tr><td>non_splits_runs</td><td
+                        id="non_splits_runs"><strong>0</strong></td></tr>
+                <tr><td>unique_verifiers</td><td
+                        id="unique_verifiers"><strong>0</strong></td></tr>
+                <tr><td>variable_values</td><td
+                        id="variable_values"><strong>0</strong></td></tr>
+                <tr><td>variables</td><td
+                        id="variables"><strong>0</strong></td></tr>
+                <tr><td>followed_games</td><td
+                        id="followed_games"><strong>0</strong></td></tr>
+                <tr><td>challenges_accepted</td><td
+                        id="challenges_accepted"><strong>0</strong></td></tr>
+                <tr><td>challenges_runs</td><td
+                        id="challenges_runs"><strong>0</strong></td></tr>
+                <tr><td>7th_places</td><td
+                        id="7th_places"><strong>0</strong></td></tr>
+            </tbody>
+        </table>
+    </body>
+    <script src="app.js"></script>
+</html>
