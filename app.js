@@ -53,10 +53,14 @@ const user = {
 };
 const rows = {};
 
-cats.forEach((cat) => {
-    user[cat] = 0;
-    rows[cat] = document.getElementById(cat);
-});
+function reset_user() {
+    user.name = "";
+    user.id = "";
+    cats.forEach((cat) => {
+        user[cat] = 0;
+        rows[cat] = document.getElementById(cat);
+    });
+}
 
 function deactivate_button() {
     isSearching = true;
@@ -196,6 +200,7 @@ function show_results() {
 }
 
 async function search() {
+    reset_user();
     if (!(await validate())) return activate_button();
     await fetch_runs();
     show_results();
