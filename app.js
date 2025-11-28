@@ -128,7 +128,8 @@ async function fetch_runs() {
         user.regions = searchData.regions.length;
         user.co_op_partners = searchData.players.length - 1;
         user.variables = searchData.variables.length;
-        user.followed_games = searchData.followedGameIds.length;
+        if (user.followedGameIds)
+            user.followed_games = searchData.followedGameIds.length;
         user.challenges_accepted = searchData.challengeList.length;
         user.challenges_runs = searchData.challengeRunList.length;
         const unique_verifiers = new Set();
