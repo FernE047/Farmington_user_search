@@ -199,4 +199,5 @@ async function search() {
     if (!(await validate())) return activate_button();
     await fetch_runs();
     show_results();
+    activate_button();
 }
