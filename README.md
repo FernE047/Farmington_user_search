@@ -46,7 +46,7 @@ Ths repository contains the github pages for the Farmington User Search applicat
 ## Credits
 
  - Developed by Camila (NotCami). Special thanks to the Farmington Server community for their support and feedback.
- - Icons by [FontAwesome](https://fontawesome.com/) and [Icons8](https://icons8.com/).
+ - Images from [Vecteezy](https://www.vecteezy.com/) (favicon) and [PNGAll](https://www.pngall.com/) (Maxwell cat image).
  - Hosted on [GitHub Pages](https://pages.github.com/).
  - API provided by [speedrun.com](https://speedrun.com/).
  - Huge Thanks to [@afdusrt](https://www.speedrun.com/users/afdusrt) for finding and reporting a bug on line 162 of app.js on commit [#c155f3839d7de0798bb179184964af4ad8d95c6b](https://github.com/FernE047/Farmington_user_search/commit/c155f3839d7de0798bb179184964af4ad8d95c6b) that miscounted the total numbers of podiums.
