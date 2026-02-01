@@ -159,7 +159,8 @@ async function fetch_runs() {
                 });
                 co_op_teams.add(run.playerIds.sort().join("+"));
             }
-            if (run.place >= 3) user.podiums += 1;
+            if (run.place != null && run.place >= 1 && run.place <= 3)
+                user.podiums++;
             if (run.obsolete) user.obsoletes += 1;
             if (run.time) user.runs_times += run.time;
             else if (run.igt) user.runs_times += run.igt;
